@@ -1,0 +1,106 @@
+[
+    {
+      "name": "Lionel Messi",
+      "position": "Attacker",
+      "team": "Argentina",
+      "goals": 1,
+      "assist": 0,
+      "image": "images/messi.jpeg"
+    },
+    {
+      "name": "Angel Di Maria",
+      "position": "MidField",
+      "team": "Argentina",
+      "goals": 0,
+      "assist": 0,
+      "image": "images/dimaria.jpg"
+    },
+    {
+        "name": "Marcos Acuna",
+        "position": "Defender",
+        "team": "Argentina",
+        "goals": 0,
+        "assist": 0,
+        "image": "images/acuna.jpg"
+      },
+      {
+        "name": "Ferran Torres",
+        "position": "Attacker",
+        "team": "Spain",
+        "goals": 2,
+        "assist": 0,
+        "image": "images/torres.jpeg"
+      },
+      {
+        "name": "Alvaro Morata",
+        "position": "Attacker",
+        "team": "Spain",
+        "goals": 1,
+        "assist": 1,
+        "image": "images/morata.jpg"
+      },
+      {
+        "name": "Jordi Alba",
+        "position": "Defender",
+        "team": "Spain",
+        "goals": 0,
+        "assist": 1,
+        "image": "images/alba.jpg"
+      },
+      {
+        "name": "Sergio Busquets",
+        "position": "Midfield",
+        "team": "Spain",
+        "goals": 0,
+        "assist": 0,
+        "image": "images/busquets.tiff"
+      },
+      {
+        "name": "Kylian Mbappe",
+        "position": "Attacker",
+        "team": "France",
+        "goals": 1,
+        "assist": 0,
+        "image": "images/mbappe.jpg"
+      },
+      {
+        "name": "Olivier Giroud",
+        "position": "Attacker",
+        "team": "France",
+        "goals": 2,
+        "assist": 0,
+        "image": "images/giroud.tiff"
+      },
+      {
+        "name": "Theo Hernandez",
+        "position": "Defender",
+        "team": "France",
+        "goals": 0,
+        "assist": 1,
+        "image": "images/hernandez.jpg"
+      },
+      {
+        "name": "Harry Kane",
+        "position": "Attacker",
+        "team": "England",
+        "goals": 0,
+        "assist": 2,
+        "image": "images/kane.tiff"
+      },
+      {
+        "name": "Jude Bellingham",
+        "position": "Midfield",
+        "team": "England",
+        "goals": 1,
+        "assist": 0,
+        "image": "images/bellingham.jpg"
+      },
+      {
+      "name": "Harry Maguire",
+      "position": "Defender",
+      "team": "England",
+      "goals": 0,
+      "assist": 1,
+      "image": "images/maguire.jpg"
+      }
+]
