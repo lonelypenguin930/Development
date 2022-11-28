@@ -5,7 +5,8 @@
       "team": "Argentina",
       "goals": 1,
       "assist": 0,
-      "image": "images/messi.jpeg"
+      "image": "images/messi.jpeg",
+      "fantasyScore": 93
     },
     {
       "name": "Angel Di Maria",
@@ -13,7 +14,8 @@
       "team": "Argentina",
       "goals": 0,
       "assist": 0,
-      "image": "images/dimaria.jpg"
+      "image": "images/dimaria.jpg",
+      "fantasyScore": 90
     },
     {
         "name": "Marcos Acuna",
@@ -21,7 +23,8 @@
         "team": "Argentina",
         "goals": 0,
         "assist": 0,
-        "image": "images/acuna.jpg"
+        "image": "images/acuna.jpg",
+        "fantasyScore": 81
       },
       {
         "name": "Ferran Torres",
@@ -29,7 +32,8 @@
         "team": "Spain",
         "goals": 2,
         "assist": 0,
-        "image": "images/torres.jpeg"
+        "image": "images/torres.jpeg",
+        "fantasyScore": 85
       },
       {
         "name": "Alvaro Morata",
@@ -37,7 +41,8 @@
         "team": "Spain",
         "goals": 1,
         "assist": 1,
-        "image": "images/morata.jpg"
+        "image": "images/morata.jpg",
+        "fantasyScore": 82
       },
       {
         "name": "Jordi Alba",
@@ -45,7 +50,8 @@
         "team": "Spain",
         "goals": 0,
         "assist": 1,
-        "image": "images/alba.jpg"
+        "image": "images/alba.jpg",
+        "fantasyScore": 86
       },
       {
         "name": "Sergio Busquets",
@@ -53,7 +59,8 @@
         "team": "Spain",
         "goals": 0,
         "assist": 0,
-        "image": "images/busquets.tiff"
+        "image": "images/busquets.tiff",
+        "fantasyScore": 83
       },
       {
         "name": "Kylian Mbappe",
@@ -61,7 +68,8 @@
         "team": "France",
         "goals": 1,
         "assist": 0,
-        "image": "images/mbappe.jpg"
+        "image": "images/mbappe.jpg",
+        "fantasyScore": 94
       },
       {
         "name": "Olivier Giroud",
@@ -69,7 +77,8 @@
         "team": "France",
         "goals": 2,
         "assist": 0,
-        "image": "images/giroud.tiff"
+        "image": "images/giroud.tiff",
+        "fantasyScore": 83
       },
       {
         "name": "Theo Hernandez",
@@ -77,7 +86,8 @@
         "team": "France",
         "goals": 0,
         "assist": 1,
-        "image": "images/hernandez.jpg"
+        "image": "images/hernandez.jpg",
+        "fantasyScore": 84
       },
       {
         "name": "Harry Kane",
@@ -85,7 +95,8 @@
         "team": "England",
         "goals": 0,
         "assist": 2,
-        "image": "images/kane.tiff"
+        "image": "images/kane.tiff",
+        "fantasyScore": 89
       },
       {
         "name": "Jude Bellingham",
@@ -93,7 +104,8 @@
         "team": "England",
         "goals": 1,
         "assist": 0,
-        "image": "images/bellingham.jpg"
+        "image": "images/bellingham.jpg",
+        "fantasyScore": 90
       },
       {
       "name": "Harry Maguire",
@@ -101,6 +113,7 @@
       "team": "England",
       "goals": 0,
       "assist": 1,
-      "image": "images/maguire.jpg"
+      "image": "images/maguire.jpg",
+      "fantasyScore": 87
       }
 ]

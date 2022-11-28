@@ -4,32 +4,41 @@ import React, { useState } from 'react';
 import PlayerData from "./player-data.json";
 import PlayerCard from "./PlayerCard";
 import { Checkbox, FormGroup, FormControlLabel, Button } from '@mui/material';
+import { OtherHouses } from '@mui/icons-material';
 
 function App() {
   const [cartItems, setCartItems] = useState([])
-  const [price, setPrice] = useState(0)
+  const [fantasyScore, setfantasyScore] = useState(0)
   const [country, setCountry] = useState("All");
   const [position, setPosition] = useState("All");
+  //0 = default, 1= goals, 2=assists, 3=fantasy score
+  const [sort, setSort] = useState(0);
 
   var countryFilterClick = 0;
   var positionFilterClick = 0;
 
 
   function addToCart(item){
+    var isDuplicate = false;
+    for(var i=0; i<cartItems.length;i++){
+      if(cartItems[i].name === item.name){
+        isDuplicate = true;
+      }
+    }
+  
+    if(!isDuplicate){
     setCartItems([...cartItems,item])
-    setPrice(price + item.price)
+    setfantasyScore(fantasyScore + item.fantasyScore)
+    }
+    else alert("Player is already added");
   }
 
-  function openNav() {
-    document.getElementById("Sidenav").style.width = "250px";
-    document.getElementById("main").style.marginLeft = "250px";
-  }
-  
-  /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
-  function closeNav() {
-    document.getElementById("Sidenav").style.width = "0";
-    document.getElementById("main").style.marginLeft = "0";
-  }
+  const handleRemoveItem = (e) => {
+    const name = e.target.getAttribute("name");
+    const fs = e.target.getAttribute("fantasyScore");
+     setCartItems(cartItems.filter(item => item.name !== name));
+     setfantasyScore(fantasyScore-fs);
+   };
 
   
 
@@ -55,7 +64,34 @@ function App() {
     }
   }
 
+  const sortData = item => {
+    if(sort === 1){
+      var gData = filteredData.sort((a, b) => {
+        return b.goals - a.goals;})
+        console.log(gData);
+        for(var i=0; i<gData.length; i++){
+          filteredData[i] = gData[i];
+    }
+  }
+    else if (sort === 2){
+      var aData = filteredData.sort((a, b) => {
+        return b.assist - a.assist;})
+        console.log(aData);
+        for(var i=0; i<aData.length; i++){
+          filteredData[i] = aData[i];
+    }
+    }
+    else if (sort === 3){
+      var fData = filteredData.sort((a, b) => {
+        return b.fantasyScore - a.fantasyScore;})
+        for(var i=0; i<fData.length; i++){
+          filteredData[i] = fData[i];
+    }
+    }
+  }
+
   const filteredData = PlayerData.filter(matchCountry).filter(matchPosition);
+  sortData();
 
   
 
@@ -65,6 +101,7 @@ function App() {
       <a className = "title" href="#">World Cup 2022 Player Database</a> {/* TODO: personalize your bakery (if you want) */}
         <a href="#" onClick={() => {
     setCountry("All");
+    setSort(0);
     setPosition("All");
     document.getElementById("allCountry").style.color = "yellow";
     document.getElementById("allPosition").style.color = "yellow";
@@ -75,6 +112,10 @@ function App() {
     document.getElementById("att").style.color = "#818181";
     document.getElementById("mf").style.color = "#818181";
     document.getElementById("df").style.color = "#818181";
+    document.getElementById("goalSort").style.color = "#818181";
+    document.getElementById("assistSort").style.color = "#818181";
+    document.getElementById("fantasySort").style.color = "#818181";
+
     }}>All Players</a>
         
         
@@ -92,7 +133,7 @@ function App() {
     }}>Country Filter</a>
 
         <FormGroup className="checkboxmenu" id = "countryFilter">
-        <a className="checkbox" id="allCountry" onClick={() => {
+        <a href="#" className="checkbox" id="allCountry" onClick={() => {
     setCountry("All");
     document.getElementById("allCountry").style.color = "yellow";
     document.getElementById("argentina").style.color = "#818181";
@@ -101,7 +142,7 @@ function App() {
     document.getElementById("england").style.color = "#818181";
 
     }}>All Teams</a>
-          <a className="checkbox" id = "argentina" onClick={() => {
+          <a href="#" className="checkbox" id = "argentina" onClick={() => {
     setCountry("Argentina");
     document.getElementById("allCountry").style.color = "#818181";
     document.getElementById("argentina").style.color = "yellow";
@@ -109,7 +150,7 @@ function App() {
     document.getElementById("france").style.color = "#818181";
     document.getElementById("england").style.color = "#818181";
     }}>Argentina</a>
-          <a className="checkbox"  id = "spain"onClick={() => {
+          <a href="#" className="checkbox"  id = "spain"onClick={() => {
     setCountry("Spain");
     document.getElementById("allCountry").style.color = "#818181";
     document.getElementById("argentina").style.color = "#818181";
@@ -117,7 +158,7 @@ function App() {
     document.getElementById("france").style.color = "#818181";
     document.getElementById("england").style.color = "#818181";
   }}>Spain</a>
-  <a className="checkbox"  id = "france" onClick={() => {
+  <a href="#" className="checkbox"  id = "france" onClick={() => {
     setCountry("France");
     document.getElementById("allCountry").style.color = "#818181";
     document.getElementById("argentina").style.color = "#818181";
@@ -125,7 +166,7 @@ function App() {
     document.getElementById("france").style.color = "yellow";
     document.getElementById("england").style.color = "#818181";
   }}>France</a>
-  <a className="checkbox"  id = "england" onClick={() => {
+  <a href="#" className="checkbox"  id = "england" onClick={() => {
     setCountry("England");
     document.getElementById("allCountry").style.color = "#818181";
     document.getElementById("argentina").style.color = "#818181";
@@ -148,28 +189,28 @@ function App() {
     }}>Position Filter</a>
 
  <FormGroup className="checkboxmenu" id = "positionFilter">
- <a className="checkbox" id="allPosition"onClick={() => {
+ <a href="#" className="checkbox" id="allPosition"onClick={() => {
     setPosition("All");
     document.getElementById("allPosition").style.color = "yellow";
     document.getElementById("att").style.color = "#818181";
     document.getElementById("mf").style.color = "#818181";
     document.getElementById("df").style.color = "#818181";
     }}>All Positions</a>
-          <a className="checkbox" id = "att" onClick={() => {
+          <a href="#" className="checkbox" id = "att" onClick={() => {
     setPosition("Attacker");
     document.getElementById("allPosition").style.color = "#818181";
     document.getElementById("att").style.color = "yellow";
     document.getElementById("mf").style.color = "#818181";
     document.getElementById("df").style.color = "#818181";
     }}>Attacker</a>
-          <a className="checkbox" id = "mf" onClick={() => {
+          <a href="#" className="checkbox" id = "mf" onClick={() => {
     setPosition("Midfield");
     document.getElementById("allPosition").style.color = "#818181";
     document.getElementById("att").style.color = "#818181";
     document.getElementById("mf").style.color = "yellow";
     document.getElementById("df").style.color = "#818181";
   }}>Midfield</a>
-  <a className="checkbox" id="df" onClick={() => {
+  <a href="#" className="checkbox" id="df" onClick={() => {
     setPosition("Defender");
     document.getElementById("allPosition").style.color = "#818181";
     document.getElementById("att").style.color = "#818181";
@@ -181,37 +222,67 @@ function App() {
 
 
 
-        <a href="#">Sort</a>
-        <a className="checkbox" onClick={() => {
-          
-     filteredData = filteredData.sort((a, b) => {
-      return a.goals - b.goals;})
-    }}>By Goals</a>
-    <a className="checkbox" onClick={() => {
-     filteredData = filteredData.sort((a, b) => {
-      return a.assist - b.assist;})
-    }}>By Assists</a>
+          <FormGroup className="sortmenu" id = "sort">
+        <a href="#" onClick={() => {
+     setSort(0);
+     document.getElementById("goalSort").style.color = "#818181";
+    document.getElementById("assistSort").style.color = "#818181";
+    document.getElementById("fantasySort").style.color = "#818181";
+
+     
+     }}>Sort</a>
+        <a href="#" className="sortbox" id= "goalSort" onClick={() => {
+          setSort(1);
+          document.getElementById("goalSort").style.color = "yellow";
+          document.getElementById("assistSort").style.color = "#818181";
+          document.getElementById("fantasySort").style.color = "#818181";
+
       
+    }}>By Goals</a>
+    <a href="#" className="sortbox" id= "assistSort" onClick={() => {
+     setSort(2);
+     document.getElementById("goalSort").style.color = "#818181";
+    document.getElementById("assistSort").style.color = "yellow";
+    document.getElementById("fantasySort").style.color = "#818181";
+    }}>By Assists</a>
+
+<a href="#" className="sortbox" id= "fantasySort" onClick={() => {
+     setSort(3);
+     document.getElementById("goalSort").style.color = "#818181";
+    document.getElementById("assistSort").style.color = "#818181";
+    document.getElementById("fantasySort").style.color = "yellow";
+
+    }}>By Fantasy Score</a>
+      </FormGroup>
       </div>
       
 
       <div id="main">
+      <div className = "PlayersToWatch">
+        <h2>Players to Watch</h2>
+        {cartItems.map((item, index) => (
+        <>
+        <div className = "PlayerInCart" name={item.name} fantasyScore = {item.fantasyScore} onClick={handleRemoveItem}>
+          x  {item.name}  ({item.fantasyScore})
+        </div>
+      </>
+        ))}
+        <h2>Total Fantasy Score: {fantasyScore.toFixed(0)}</h2>
+        <Button onClick={()=> {window.location.reload(false);}}>Clear Players</Button>
+      </div>
       <div className = "BakeryContainer">
+        
       <Grid container spacing={{ xs: 4, md: 6 }} columns={{ xs: 3, sm: 5, md: 12 }}>
 
       {filteredData.map((item, index) => ( 
-      <Grid xs={2} sm={4} md={4} key={index}>
+      <Grid xs={2} sm={3} md={4} key={index}>
         <PlayerCard item = {item} addToCart = {addToCart}/>
         </Grid>
       ))}
       </Grid>
       </div>
 
-      <div className = "Players to Watch">
-        <h2>Players to Watch</h2>
-        {cartItems.map((item, index) => (<p> {item.name}</p>))}
-        <h2>Total Price: {price.toFixed(2)}</h2>
-      </div>
+      
       </div>
     </div>
   );
