@@ -2,7 +2,7 @@
 
 ### Link to Deployed Website
 
-If you used the stencil code, this is `https://<your GitHub username>.github.io/<name of your repository>`
+If you used the stencil code, this is `https://lonelypenguin930.github.io/Development/`
 
 ### Goal and Value of the Application
 
