@@ -3,19 +3,119 @@
       "name": "Lionel Messi",
       "position": "Attacker",
       "team": "Argentina",
-      "goals": 1,
-      "assist": 0,
+      "goals": 2,
+      "assist": 1,
       "image": "images/messi.jpeg",
       "fantasyScore": 93
+    },
+    {
+      "name": "Cristiano Ronaldo",
+      "position": "Attacker",
+      "team": "Portugal",
+      "goals": 1,
+      "assist": 0,
+      "image": "images/cr7.jpg",
+      "fantasyScore": 89
+    },
+    {
+      "name": "Neymar Jr",
+      "position": "Attacker",
+      "team": "Brazil",
+      "goals": 0,
+      "assist": 0,
+      "image": "images/neymar.jpg",
+      "fantasyScore": 92
+    },
+    {
+      "name": "Richarlison",
+      "position": "Attacker",
+      "team": "Brazil",
+      "goals": 2,
+      "assist": 0,
+      "image": "images/richarlison.jpg",
+      "fantasyScore": 87
+    },
+    {
+      "name": "Casemiro",
+      "position": "Midfield",
+      "team": "Brazil",
+      "goals": 1,
+      "assist": 0,
+      "image": "images/casemiro.jpg",
+      "fantasyScore": 80
+    },
+    {
+      "name": "Thiago Silva",
+      "position": "Defender",
+      "team": "Brazil",
+      "goals": 0,
+      "assist": 0,
+      "image": "images/tsilva.jpg",
+      "fantasyScore": 83
+    },
+    {
+      "name": "Lucas Paqueta",
+      "position": "Midfield",
+      "team": "Brazil",
+      "goals": 0,
+      "assist": 0,
+      "image": "images/paqueta.jpg",
+      "fantasyScore": 83
+    },
+    {
+      "name": "Vinicius Jr",
+      "position": "Attacker",
+      "team": "Brazil",
+      "goals": 0,
+      "assist": 1,
+      "image": "images/vinicius.jpg",
+      "fantasyScore": 89
+    },
+    
+    {
+      "name": "Bruno Fernandes",
+      "position": "Midfield",
+      "team": "Portugal",
+      "goals": 2,
+      "assist": 2,
+      "image": "images/bruno.jpg",
+      "fantasyScore": 94
     },
     {
       "name": "Angel Di Maria",
       "position": "Midfield",
       "team": "Argentina",
       "goals": 0,
-      "assist": 0,
+      "assist": 1,
       "image": "images/dimaria.jpg",
-      "fantasyScore": 90
+      "fantasyScore": 88
+    },
+    {
+      "name": "Rodrigo De Paul",
+      "position": "Midfield",
+      "team": "Argentina",
+      "goals": 0,
+      "assist": 0,
+      "image": "images/depaul.jpg",
+      "fantasyScore": 86
+    },
+    {
+      "name": "Lautaro Martinez",
+      "position": "Attacker",
+      "team": "Argentina",
+      "goals": 0,
+      "assist": 0,
+      "image": "images/lautaro.jpg",
+      "fantasyScore": 86
+    },
+    {
+      "name": "Lisandro Martinez",
+      "position": "Defender",
+      "team": "Argentina",
+      "goals": 0,
+      "assist": 0,
+      "image": "images/lartinez.jpg",
+      "fantasyScore": 86
     },
     {
         "name": "Marcos Acuna",
@@ -39,7 +139,7 @@
         "name": "Alvaro Morata",
         "position": "Attacker",
         "team": "Spain",
-        "goals": 1,
+        "goals": 2,
         "assist": 1,
         "image": "images/morata.jpg",
         "fantasyScore": 82
@@ -49,7 +149,7 @@
         "position": "Defender",
         "team": "Spain",
         "goals": 0,
-        "assist": 1,
+        "assist": 2,
         "image": "images/alba.jpg",
         "fantasyScore": 86
       },
@@ -61,6 +161,23 @@
         "assist": 0,
         "image": "images/busquets.tiff",
         "fantasyScore": 83
+      },{
+        "name": "Pedri",
+        "position": "Midfield",
+        "team": "Spain",
+        "goals": 0,
+        "assist": 0,
+        "image": "images/pedri.jpg",
+        "fantasyScore": 85
+      },
+      {
+        "name": "Cesar Azpilicueta",
+        "position": "Defender",
+        "team": "Spain",
+        "goals": 0,
+        "assist": 0,
+        "image": "images/azp.jpg",
+        "fantasyScore": 85
       },
       {
         "name": "Kylian Mbappe",
@@ -72,6 +189,33 @@
         "fantasyScore": 94
       },
       {
+        "name": "Joao Felix",
+        "position": "Attacker",
+        "team": "Portugal",
+        "goals": 1,
+        "assist": 0,
+        "image": "images/felix.jpg",
+        "fantasyScore": 89
+      },
+      {
+        "name": "Joao Cancelo",
+        "position": "Defender",
+        "team": "Portugal",
+        "goals": 0,
+        "assist": 0,
+        "image": "images/cancelo.jpg",
+        "fantasyScore": 86
+      },
+      {
+        "name": "Bernardo Silva",
+        "position": "Midfield",
+        "team": "Portugal",
+        "goals": 0,
+        "assist": 0,
+        "image": "images/bsilva.jpg",
+        "fantasyScore": 90
+      },
+      {
         "name": "Olivier Giroud",
         "position": "Attacker",
         "team": "France",
@@ -81,6 +225,15 @@
         "fantasyScore": 83
       },
       {
+        "name": "Antoine Griezmann",
+        "position": "Attacker",
+        "team": "France",
+        "goals": 0,
+        "assist": 1,
+        "image": "images/griezmann.tiff",
+        "fantasyScore": 91
+      },
+      {
         "name": "Theo Hernandez",
         "position": "Defender",
         "team": "France",
@@ -88,6 +241,15 @@
         "assist": 1,
         "image": "images/hernandez.jpg",
         "fantasyScore": 84
+      },
+      {
+        "name": "Dayot Upamecano",
+        "position": "Defender",
+        "team": "France",
+        "goals": 0,
+        "assist": 0,
+        "image": "images/upamecano.jpg",
+        "fantasyScore": 86
       },
       {
         "name": "Harry Kane",
@@ -106,6 +268,33 @@
         "assist": 0,
         "image": "images/bellingham.jpg",
         "fantasyScore": 90
+      },
+      {
+        "name": "Marcus Rashford",
+        "position": "Attacker",
+        "team": "England",
+        "goals": 1,
+        "assist": 0,
+        "image": "images/rashford.jpg",
+        "fantasyScore": 84
+      },
+      {
+        "name": "Raheem Sterling",
+        "position": "Attacker",
+        "team": "England",
+        "goals": 1,
+        "assist": 1,
+        "image": "images/sterling.jpg",
+        "fantasyScore": 88
+      },
+      {
+        "name": "Luke Shaw",
+        "position": "Defender",
+        "team": "England",
+        "goals": 0,
+        "assist": 1,
+        "image": "images/shaw.jpg",
+        "fantasyScore": 88
       },
       {
       "name": "Harry Maguire",
