@@ -6,8 +6,8 @@ function PlayerCard(props){
     return(<div className="playerCard">
         <h3>{props.item.name}</h3>
         <img src ={props.item.image} alt = "portrait of the player" />
-        <p>{props.item.position}</p>
         <p>{props.item.team}</p>
+        <p>{props.item.position}</p>
         <p>Goals: {props.item.goals}</p>
         <p>Assists: {props.item.assist}</p>
         <p>Fantasy Score: {props.item.fantasyScore}</p>

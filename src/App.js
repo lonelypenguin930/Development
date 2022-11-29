@@ -5,6 +5,7 @@ import PlayerData from "./player-data.json";
 import PlayerCard from "./PlayerCard";
 import { Checkbox, FormGroup, FormControlLabel, Button } from '@mui/material';
 import { OtherHouses } from '@mui/icons-material';
+import RemoveCircleOutlineIcon from '@mui/icons-material/RemoveCircleOutline';
 
 function App() {
   const [cartItems, setCartItems] = useState([])
@@ -115,6 +116,8 @@ function App() {
     document.getElementById("goalSort").style.color = "#818181";
     document.getElementById("assistSort").style.color = "#818181";
     document.getElementById("fantasySort").style.color = "#818181";
+    document.getElementById("por").style.color = "#818181";
+    document.getElementById("bra").style.color = "#818181";
 
     }}>All Players</a>
         
@@ -140,6 +143,8 @@ function App() {
     document.getElementById("spain").style.color = "#818181";
     document.getElementById("france").style.color = "#818181";
     document.getElementById("england").style.color = "#818181";
+    document.getElementById("por").style.color = "#818181";
+    document.getElementById("bra").style.color = "#818181";
 
     }}>All Teams</a>
           <a href="#" className="checkbox" id = "argentina" onClick={() => {
@@ -149,6 +154,8 @@ function App() {
     document.getElementById("spain").style.color = "#818181";
     document.getElementById("france").style.color = "#818181";
     document.getElementById("england").style.color = "#818181";
+    document.getElementById("por").style.color = "#818181";
+    document.getElementById("bra").style.color = "#818181";
     }}>Argentina</a>
           <a href="#" className="checkbox"  id = "spain"onClick={() => {
     setCountry("Spain");
@@ -157,6 +164,8 @@ function App() {
     document.getElementById("spain").style.color = "yellow";
     document.getElementById("france").style.color = "#818181";
     document.getElementById("england").style.color = "#818181";
+    document.getElementById("por").style.color = "#818181";
+    document.getElementById("bra").style.color = "#818181";
   }}>Spain</a>
   <a href="#" className="checkbox"  id = "france" onClick={() => {
     setCountry("France");
@@ -165,6 +174,8 @@ function App() {
     document.getElementById("spain").style.color = "#818181";
     document.getElementById("france").style.color = "yellow";
     document.getElementById("england").style.color = "#818181";
+    document.getElementById("por").style.color = "#818181";
+    document.getElementById("bra").style.color = "#818181";
   }}>France</a>
   <a href="#" className="checkbox"  id = "england" onClick={() => {
     setCountry("England");
@@ -173,7 +184,32 @@ function App() {
     document.getElementById("spain").style.color = "#818181";
     document.getElementById("france").style.color = "#818181";
     document.getElementById("england").style.color = "yellow";
+    document.getElementById("por").style.color = "#818181";
+    document.getElementById("bra").style.color = "#818181";
   }}>England</a>
+
+<a href="#" className="checkbox"  id = "por" onClick={() => {
+    setCountry("Portugal");
+    document.getElementById("allCountry").style.color = "#818181";
+    document.getElementById("argentina").style.color = "#818181";
+    document.getElementById("spain").style.color = "#818181";
+    document.getElementById("france").style.color = "#818181";
+    document.getElementById("england").style.color = "#818181";
+    document.getElementById("por").style.color = "yellow";
+    document.getElementById("bra").style.color = "#818181";
+
+  }}>Portugal</a>
+
+<a href="#" className="checkbox"  id = "bra" onClick={() => {
+    setCountry("Brazil");
+    document.getElementById("allCountry").style.color = "#818181";
+    document.getElementById("argentina").style.color = "#818181";
+    document.getElementById("spain").style.color = "#818181";
+    document.getElementById("france").style.color = "#818181";
+    document.getElementById("england").style.color = "#818181";
+    document.getElementById("por").style.color = "#818181";
+    document.getElementById("bra").style.color = "yellow";
+  }}>Brazil</a>
           </FormGroup>
         <a href="#" onClick={() => {
           if(positionFilterClick === 0){
@@ -262,12 +298,12 @@ function App() {
         <h2>Players to Watch</h2>
         {cartItems.map((item, index) => (
         <>
-        <div className = "PlayerInCart" name={item.name} fantasyScore = {item.fantasyScore} onClick={handleRemoveItem}>
-          x  {item.name}  ({item.fantasyScore})
+        <div href="#" className = "PlayerInCart" name={item.name} fantasyScore = {item.fantasyScore} onClick={handleRemoveItem}>
+          x {item.name}  ({item.fantasyScore})
         </div>
       </>
         ))}
-        <h2>Total Fantasy Score: {fantasyScore.toFixed(0)}</h2>
+        <h2>Average Fantasy Score: {(fantasyScore/cartItems.length).toFixed(2)}</h2>
         <Button onClick={()=> {window.location.reload(false);}}>Clear Players</Button>
       </div>
       <div className = "BakeryContainer">

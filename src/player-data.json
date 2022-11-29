@@ -14,7 +14,7 @@
       "team": "Portugal",
       "goals": 1,
       "assist": 0,
-      "image": "images/cr7.jpg",
+      "image": "images/cr7.png",
       "fantasyScore": 89
     },
     {
@@ -23,7 +23,7 @@
       "team": "Brazil",
       "goals": 0,
       "assist": 0,
-      "image": "images/neymar.jpg",
+      "image": "images/neymar.png",
       "fantasyScore": 92
     },
     {
@@ -32,7 +32,7 @@
       "team": "Brazil",
       "goals": 2,
       "assist": 0,
-      "image": "images/richarlison.jpg",
+      "image": "images/richarlison.png",
       "fantasyScore": 87
     },
     {
@@ -41,8 +41,8 @@
       "team": "Brazil",
       "goals": 1,
       "assist": 0,
-      "image": "images/casemiro.jpg",
-      "fantasyScore": 80
+      "image": "images/casemiro.png",
+      "fantasyScore": 89
     },
     {
       "name": "Thiago Silva",
@@ -50,7 +50,7 @@
       "team": "Brazil",
       "goals": 0,
       "assist": 0,
-      "image": "images/tsilva.jpg",
+      "image": "images/tsilva.png",
       "fantasyScore": 83
     },
     {
@@ -59,7 +59,7 @@
       "team": "Brazil",
       "goals": 0,
       "assist": 0,
-      "image": "images/paqueta.jpg",
+      "image": "images/paqueta.png",
       "fantasyScore": 83
     },
     {
@@ -68,7 +68,7 @@
       "team": "Brazil",
       "goals": 0,
       "assist": 1,
-      "image": "images/vinicius.jpg",
+      "image": "images/vinicius.png",
       "fantasyScore": 89
     },
     
@@ -78,7 +78,7 @@
       "team": "Portugal",
       "goals": 2,
       "assist": 2,
-      "image": "images/bruno.jpg",
+      "image": "images/bruno.png",
       "fantasyScore": 94
     },
     {
@@ -96,7 +96,7 @@
       "team": "Argentina",
       "goals": 0,
       "assist": 0,
-      "image": "images/depaul.jpg",
+      "image": "images/depaul.png",
       "fantasyScore": 86
     },
     {
@@ -105,7 +105,7 @@
       "team": "Argentina",
       "goals": 0,
       "assist": 0,
-      "image": "images/lautaro.jpg",
+      "image": "images/lautaro.png",
       "fantasyScore": 86
     },
     {
@@ -114,7 +114,7 @@
       "team": "Argentina",
       "goals": 0,
       "assist": 0,
-      "image": "images/lartinez.jpg",
+      "image": "images/martinez.png",
       "fantasyScore": 86
     },
     {
@@ -167,7 +167,7 @@
         "team": "Spain",
         "goals": 0,
         "assist": 0,
-        "image": "images/pedri.jpg",
+        "image": "images/pedri.png",
         "fantasyScore": 85
       },
       {
@@ -176,7 +176,7 @@
         "team": "Spain",
         "goals": 0,
         "assist": 0,
-        "image": "images/azp.jpg",
+        "image": "images/azp.png",
         "fantasyScore": 85
       },
       {
@@ -194,7 +194,7 @@
         "team": "Portugal",
         "goals": 1,
         "assist": 0,
-        "image": "images/felix.jpg",
+        "image": "images/felix.png",
         "fantasyScore": 89
       },
       {
@@ -203,7 +203,7 @@
         "team": "Portugal",
         "goals": 0,
         "assist": 0,
-        "image": "images/cancelo.jpg",
+        "image": "images/cancelo.png",
         "fantasyScore": 86
       },
       {
@@ -212,7 +212,7 @@
         "team": "Portugal",
         "goals": 0,
         "assist": 0,
-        "image": "images/bsilva.jpg",
+        "image": "images/bsilva.png",
         "fantasyScore": 90
       },
       {
@@ -230,7 +230,7 @@
         "team": "France",
         "goals": 0,
         "assist": 1,
-        "image": "images/griezmann.tiff",
+        "image": "images/griezmann.png",
         "fantasyScore": 91
       },
       {
@@ -248,7 +248,7 @@
         "team": "France",
         "goals": 0,
         "assist": 0,
-        "image": "images/upamecano.jpg",
+        "image": "images/upamecano.png",
         "fantasyScore": 86
       },
       {
@@ -275,7 +275,7 @@
         "team": "England",
         "goals": 1,
         "assist": 0,
-        "image": "images/rashford.jpg",
+        "image": "images/rashford.png",
         "fantasyScore": 84
       },
       {
@@ -284,7 +284,7 @@
         "team": "England",
         "goals": 1,
         "assist": 1,
-        "image": "images/sterling.jpg",
+        "image": "images/sterling.png",
         "fantasyScore": 88
       },
       {
@@ -293,7 +293,7 @@
         "team": "England",
         "goals": 0,
         "assist": 1,
-        "image": "images/shaw.jpg",
+        "image": "images/shaw.png",
         "fantasyScore": 88
       },
       {
